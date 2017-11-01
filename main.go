@@ -7,7 +7,6 @@ import (
 )
 
 func main() {
-	fmt.Println("Calculator")
-
 	p := parser.Parser{lexer.Lexer{}}
+	fmt.Println(p.Evaluate("2 + 2 * 2"))
 }
